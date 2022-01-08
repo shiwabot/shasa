@@ -109,9 +109,9 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/ae41ca22aaff27dfb50cc.jpg) 」────
+────「 [{}](https://telegra.ph/file/cc54f8b832889edc00630.jpg) 」────
 *ʜᴇʏ! {},*
-*ɪ ᴀᴍ 𝐒𝐡𝐚𝐬𝐚 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴏ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.*
+*ɪ ᴀᴍ Anie ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴏ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ✓• *Uptime:* `{}`
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -141,7 +141,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey there! Myself [𝐒𝐡𝐚𝐬𝐚](https://telegra.ph/file/c3f91b87fa65cd83f306d.jpg).
+Hey there! Myself [Anie](https://telegra.ph/file/cc54f8b832889edc00630.jpg).
 I'm a Queen For Fun and help admins manage their groups ! Have a look at the following for an idea of some of the things I can help you with.
 
 *Main* commands available:
@@ -276,7 +276,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             GROUP_START_IMG,
-            caption="<code>Shasa is Here For You💜\nI am Awake Since</code>: <code>{}</code>".format(
+            caption="<code>Anie is Here For You💜\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -290,7 +290,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs",
-                            url="https://telegram.dog/LionXupdates",
+                            url="https://telegram.dog/Aniebots",
                         )
                     ],
                 ]
@@ -429,13 +429,13 @@ def shasa_callback_data(update, context):
     uptime = get_readable_time((time.time() - StartTime))
     if query.data == "shasa_":
         query.message.edit_text(
-            text="""ℹ️ ι'м *ѕнαѕα*, α ρσωєяfυℓ gяσυρ мαиαgємєит вσт вυιℓт тσ нєℓρ уσυ мαиαgє уσυя gяσυρ єαѕιℓу.
-        ❍ 💜[Owner](https://t.me/Simpleboy786)💜
-        ❍ 🧡[Updates](https://t.me/Shasa_News)🧡
-        ❍ 🤍[Suppσrt](https://t.me/joinchat/P8HIdXOL8V9iNjRh)🤍
-        ❍ 💚[LionZUb](https://t.me/LionXSupport)💚
+            text="""ℹ️ ι'м *Anie*, α ρσωєяfυℓ gяσυρ мαиαgємєит вσт вυιℓт тσ нєℓρ уσυ мαиαgє уσυя gяσυρ єαѕιℓу.
+        ❍ 💜[Owner](https://t.me/Denvil_pro)💜
+        ❍ 🧡[Updates](https://t.me/Aniebots)🧡
+        ❍ 🤍[Suppσrt](https://t.me/Aniebotsupports)🤍
+        ❍ 💚[AnieUb](https://t.me/Aniebotsupports)💚
         ❍ ❤️[ChatGrp](https://t.me/TotalNadaniya)❤️
-        ✨[Vc Player Help](https://telegra.ph/Shasa-Music-08-15)✨""",
+        ✨[Vc Player Help](https://t.me/Aniebotsupports)✨""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -516,14 +516,14 @@ def shasa_callback_data(update, context):
         )
     elif query.data == "shasa_support":
         query.message.edit_text(
-            text="* Shasa support chats*" "\nJoin Support Group/Channel",
+            text="* Anie support chats*" "\nAnieub Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", url="t.me/Shasa_News"),
+                        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", url="t.me/Aniebots"),
                         InlineKeyboardButton(
-                            text="ᴠᴄ ʜᴇʟᴘ", url="https://telegra.ph/Shasa-Music-08-15"
+                            text="ᴠᴄ ʜᴇʟᴘ", url="https://t.me/Aniebotsupports"
                         ),
                     ],
                     [
@@ -531,7 +531,7 @@ def shasa_callback_data(update, context):
                             text="sᴜᴘᴘᴏʀᴛ", url=f"https://telegram.dog/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/LionXupdates"
+                            text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Denvil_bots"
                         ),
                     ],
                     [
@@ -544,23 +544,23 @@ def shasa_callback_data(update, context):
         )
     elif query.data == "shasa_credit":
         query.message.edit_text(
-            text=f"<b> SHASA DEV'S</b>\n"
-            f"\nHere Some Developers Helping in Making The Shasa RoBot",
+            text=f"<b> Anie DEV'S</b>\n"
+            f"\nHere Some Developers Helping in Making The Anie RoBot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴅᴇᴠ", url="t.me/simpleboy786"),
+                        InlineKeyboardButton(text="ᴅᴇᴠ", url="t.me/denvil_pro"),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ", url="https://github.com/MdNoor786"
+                            text="ɢɪᴛʜᴜʙ", url="https://github.com/Anieteam"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠ²", url="https://t.me/Copyless786"
+                            text="ᴅᴇᴠ²", url="https://t.me/FakeMasked"
                         ),
                         InlineKeyboardButton(
-                            text="ʀᴇᴅʟɪᴏɴ", url="https://t.me/Shasa_News/12"
+                            text="ʀᴇᴅʟɪᴏɴ", url="https://t.me/Aniebots/12"
                         ),
                     ],
                     [
@@ -896,7 +896,7 @@ def main():
 
     else:
         LOGGER.info(
-            f"Shasa started, Using long polling. | BOT: [@{dispatcher.bot.username}]"
+            f"Anie started, Using long polling. | BOT: [@{dispatcher.bot.username}]"
         )
         updater.start_polling(
             timeout=15,
