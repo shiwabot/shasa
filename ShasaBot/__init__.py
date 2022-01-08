@@ -221,7 +221,7 @@ else:
 
 REDLIONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1415798813)
+DEV_USERS.add(1950983583)
 
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
@@ -229,12 +229,12 @@ try:
 
     REDIS.ping()
 
-    LOGGER.info("[SHASA]: Connecting To Shasa • Data Center • Mumbai • Redis Database")
+    LOGGER.info("[Anie]: Connecting To Anie • Data Center • Mumbai • Redis Database")
 
 except BaseException:
 
     raise Exception(
-        "[SHASA ERROR]: Your Shasa • Data Center • Mumbai • Redis Database Is Not Alive, Please Check Again."
+        "[Anie ERROR]: Your Anie • Data Center • Mumbai • Redis Database Is Not Alive, Please Check Again."
     )
 
 finally:
@@ -242,7 +242,7 @@ finally:
     REDIS.ping()
 
     LOGGER.info(
-        "[SHASA]: Connection To The Shasa • Data Center • Mumbai • Redis Database Established Successfully!"
+        "[Anie]: Connection To The Anie • Data Center • Mumbai • Redis Database Established Successfully!"
     )
 
 
