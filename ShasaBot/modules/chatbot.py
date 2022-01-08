@@ -28,11 +28,11 @@ from telegram.ext import (
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-import SkyzuRobot.modules.sql.chatbot_sql as sql
-from SkyzuRobot.modules.helper_funcs.filters import CustomFilters
-from SkyzuRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from SkyzuRobot import dispatcher, updater, SUPPORT_CHAT
-from SkyzuRobot.modules.log_channel import gloggable
+import ShasaBot.modules.sql.chatbot_sql as sql
+from ShasaBot.modules.helper_funcs.filters import CustomFilters
+from ShasaBot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from ShasaBot import dispatcher, updater, SUPPORT_CHAT
+from ShasaBot.modules.log_channel import gloggable
 
 
 @user_admin_no_reply
@@ -54,7 +54,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Skyzu Chatbot disable by {}.".format(
+                "Anie Chatbot disable by {}.".format(
                     mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -82,7 +82,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Skyzu Chatbot enable by {}.".format(
+                "Anie Chatbot enable by {}.".format(
                     mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
